@@ -1,3 +1,31 @@
+
+#contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+.contact-detail p {
+    margin: 0;
+}
+=======
 header{
     
 }
@@ -19,3 +47,4 @@ header{
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+
