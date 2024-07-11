@@ -8,6 +8,7 @@
 
 #contact h2 {
     text-align: center;
+    font-size: 3em;
 }
 
 .contact-detail {
@@ -17,13 +18,14 @@
 }
 
 .contact-icon {
-    width: 24px; /* Adjust the width as needed */
-    height: 24px; /* Adjust the height as needed */
+    width: 24px;
+    height: 24px;
     margin-right: 10px;
 }
 
 .contact-detail p {
     margin: 0;
+    font-size: 1.5em;
 }
 =======
 header{
