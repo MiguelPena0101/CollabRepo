@@ -1,0 +1,50 @@
+header {
+}
+
+body {
+  background-image: url(../AvengersImages/istockphoto-495868375-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgb(242,52,52);
+    background: linear-gradient(90deg, rgba(242,52,52,1) 4%, rgba(171,48,41,1) 38%, rgba(179,94,45,1) 62%, rgba(153,77,30,1) 79%, rgba(115,61,27,1) 100%);
+    font-size: 20px; */
+}
+
+/* h1 {
+    color: purple;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+} */
+/* } */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+#video-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* #fightScene {
+  opacity: 0.8;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+} */
