@@ -1,16 +1,184 @@
+:root{
+    --primary: rgb(252, 100, 2);
+    --secondary: rgb(78, 43, 19);
+    --nipponcolors: rgb(182, 19, 0);
+    --secondarynippon: rgb(242, 226, 200);
+    --blackpanther: rgb(102,78,174);
+    --wakandaforever: rgb(12,11,19);
+
+}
+*{
+  box-sizing: border-box;
+}
+
 header{
+    /* background-color: #968565; */
+    background-image: url(../AvengersImages/header.png) ;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size:cover;
+    object-fit: cover;
+    width:100%;
+    height: 76%;
+    /* opacity: 0.6; */
+}
+header nav{
+    display:flex;
+    flex-direction: row;
+    flex-basis: calc(50% - 1em);
+    padding: 5px 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    
+
+
+}
+header h1{
+    text-align: center;
+    color: var(--blackpanther);
+    font-size: 72px;
     
 }
 
+/* header img{
+  
+} */
+
+#logoimg{
+  float:left;
+}
+
+#floatright{
+  color: cornflowerblue;
+  float: right;
+}
+
+
+#kicking{
+  float:right;
+  margin:auto;
+}
+    .workinglink a {
+        padding: 8px 10px;
+        margin: 90px;
+        font-size: 32px;
+        display:inline-flex;
+        flex-direction: row;
+        /* margin-bottom: auto; */
+        /* margin-right: 60px;
+        padding-bottom: 10px; */
+        /* justify-content: space-between; */
+        align-items: center;
+        border:  10px groove white;
+        background-image: linear-gradient(275deg, var(--secondarynippon)0%, var(--nipponcolors)100%);
+        transition: all 0.4s ease-in;
+        text-decoration: none;
+        
+        
+      }
+     
+      .workinglink img{
+        width: 11%;
+        height: 11%;
+        background-repeat:no-repeat;
+        background-position: 50% 50%;
+        background-size:contain;
+        object-fit: cover;
+    /* width:100%;
+    height: 76%; */
+      }
+
+      .workinglink a:hover{
+        background-image: linear-gradient(275deg, var(--wakandaforever)0%, var(--blackpanther)100%);
+        color:white;
+        text-decoration: none;
+      }
+
+      .boxshadows{
+        border: 4px solid blue; 
+        display:inline-block;
+        box-shadow: 10px 5px 5px grey;
+      }
+      .creativebg img{
+        width: 80%;
+        height: 80%;
+        background-size:cover;
+        }
+     x
+
+   img {
+    width: 30%;
+    height: 30%;
+
+   }
+
+      .links{
+        text-align: center;
+      }
+
+      main{
+        text-align: center;
+        font-size: xx-large;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      /* .links2 a {
+        text-decoration: none;
+        display: inline-block;
+        flex-grow: 1;
+        margin: 0 0.5em;
+        border:solid;
+        text-align:center;
+        
+      } */
+
  body {
-    background-image: url(../AvengersImages/istockphoto-495868375-612x612.jpg);
+    background-image: url(../AvengersImages/background.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-color: black;
+    color: var(--primary)
+
+  
+
     /* background: rgb(242,52,52);
     background: linear-gradient(90deg, rgba(242,52,52,1) 4%, rgba(171,48,41,1) 38%, rgba(179,94,45,1) 62%, rgba(153,77,30,1) 79%, rgba(115,61,27,1) 100%);
     font-size: 20px; */
 };
 
+#about{
+  border: 3px solid var(--nipponcolors)
+}
+
+#contact{
+  position: relative; bottom: 2px;
+}
+
+.provide{
+  margin-bottom: 4px;
+}
+
+/* .reachout img {
+    height:5%;
+    width:5%;
+} */
+
+
+@media screen and (max-width: 768px) {
+    .hero-banner {
+        flex-direction: column;
+        text-align:center;
+    }
+}
+footer{
+    background-color: black;
+    margin: 40px;
+    padding: 20px 6% 20px 0;
+    text-align: center;
+    text-decoration:underline;
+    font-size: 32px;
+    
+}
 /* h1 {
     color: purple;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
