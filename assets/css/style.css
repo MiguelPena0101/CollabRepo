@@ -3,8 +3,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 =======
 
+.about-section {
+  text-align: center;
+}
+.overlay-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.overlay-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 0.9em;
+  color:black;
+}
 #contact {
     width: 100%;
     max-width: 600px;
