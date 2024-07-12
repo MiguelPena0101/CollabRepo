@@ -16,8 +16,11 @@
 }
 
 .overlay-text p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: black;
 }
 
 .team {
