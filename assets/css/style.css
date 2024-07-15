@@ -9,6 +9,8 @@
 }
 *{
   box-sizing: border-box;
+  /* margin-bottom:0; */
+  
 }
 
 header{
@@ -19,7 +21,8 @@ header{
     background-size:cover;
     object-fit: cover;
     width:100%;
-    height: 76%;
+    height: 100%;
+    border-radius: 3px;
     /* opacity: 0.6; */
 }
 header nav{
@@ -41,25 +44,62 @@ header h1{
     
 }
 
+.About video{
+  padding:15px;
+  margin: auto;
+}
 /* header img{
   
 } */
-
-#logoimg{
-  float:left;
+section{
+  display:block;
 }
 
-#floatright{
-  color: cornflowerblue;
+section h2{
+  margin-top:auto;
+}
+
+/* #floatright{
   float: right;
-}
+} */
 
 
 #kicking{
-  float:right;
-  margin:auto;
+  float:left;
+  margin:2px;
+  max-width:400px
 }
-    .workinglink a {
+
+#floatbodyleft{
+  font-size: 28px;
+  padding: 18.2px;
+  border:solid 2px var(--blackpanther);
+  display:inline-flex;
+   justify-content: center;
+  background-color: black;
+
+ }
+
+ #crosshands{
+  position: relative;
+  right: 855px;
+  top: 250px;
+  /* margin-top:20px; */
+  max-width:400px;
+
+  
+}
+   
+ #motto{
+  background-color: black;
+  border: solid 2px var(--blackpanther);
+  display:inline-flex;
+  font-size: 28px;
+  float: left;
+  margin-left:30%;
+  /* margin-right: 30%; */
+}
+.workinglink a {
         padding: 8px 10px;
         margin: 90px;
         font-size: 32px;
@@ -77,6 +117,7 @@ header h1{
         
         
       }
+    
      
       .workinglink img{
         width: 11%;
@@ -96,7 +137,8 @@ header h1{
       }
 
       .boxshadows{
-        border: 4px solid blue; 
+        border: 4px solid var(--blackpanther); 
+        background-color: var(--secondarynippon);
         display:inline-block;
         box-shadow: 10px 5px 5px grey;
       }
@@ -151,11 +193,13 @@ header h1{
 }
 
 #contact{
-  position: relative; bottom: 2px;
+ bottom: 2px;
+ text-align: center;
 }
 
 .provide{
   margin-bottom: 4px;
+  background-color: var(--secondarynippon);
 }
 
 /* .reachout img {
@@ -163,21 +207,35 @@ header h1{
     width:5%;
 } */
 
-
-@media screen and (max-width: 768px) {
-    .hero-banner {
-        flex-direction: column;
-        text-align:center;
-    }
+#thisisus{
+  position: relative;
+  left: 200px;
 }
-footer{
+
+.footer{
     background-color: black;
-    margin: 40px;
     padding: 20px 6% 20px 0;
     text-align: center;
     text-decoration:underline;
     font-size: 32px;
+    justify-content:space-around;
     
+}
+
+@media screen and (max-width: 768px) {
+  #video-containter {
+      flex-direction: column;
+      text-align:center;
+  }
+  video{
+    height: 75%;
+    width: 75%;
+  }
+  #floatbodyleft{
+    font-size: 28px;
+    padding: 18.2px;
+    float:left;
+}
 }
 /* h1 {
     color: purple;

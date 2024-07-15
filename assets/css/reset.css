@@ -7,9 +7,16 @@
     ;
   } */
 
-  .links{
+  /* .links{
     text-align: center;
-}
+} */
+
+@media screen and (max-width: 768px) {
+   p{
+    font-size: 50%;
+   }
+  }
+
 /* 
 h2.boxshadows {
   margin-bottom: 3px;
