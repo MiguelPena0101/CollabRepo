@@ -7,6 +7,9 @@
 #LOCAL ENVIRONMENT VARIABLE
 .env
 
+# Files that doesn't need to be uploaded
+ThanosSnappedYou.zip
+
 #HIDDEN
 node_modules/
 package-lock.json
