@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Avengers Karate Class</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <!-- please work -->
+    
+    
+    
+</head>
+<body>
+    
+    <header>
+        <h1 id="title">The Avengers Karate Class</h1>
+        <div class="welp"></div>
+        <nav class="workinglink">
+                <a class="links" href="#home">Home</a></li>
+                <a class="links" href="#about">About</a></li>
+                <a class="links" id="floatright" href="#contact">Contact</a></li>
+                <a class="links" href="#" id="floatright">Sign Up</a></li>
+        </nav>
+        
+=======
   </head>
   <body>
     <header>
@@ -18,9 +38,40 @@
           <li><a href="#" id="signup-btn">Sign Up</a></li>
         </ul>
       </nav>
+
     </header>
+<br>
+
 
     <main>
+
+        <section class="provide" id="home">
+            <h2 class="boxshadows">Welcome to The Avengers Karate Class</h2>
+            <section id="video-container" class="About">
+                <video autoplay muted loop>
+                  <source
+                    src="./assets/AvengersImages/Capfightscene.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+            
+        </section>
+        <br>
+        <section >
+        <h2 class="boxshadows">Our Motto</h2>
+        <img src="./assets/AvengersImages/gettyimages-187288791-612x612.jpg" id="kicking"></a>
+        <p id="floatbodyleft">Join us to learn the art of karate and become a hero in your own right!</p>
+        </section>
+        <section class="provide" id="about">
+            <h2 class="boxshadows" id="thisisus">About Us</h2>
+            <img src="./assets/AvengersImages/istockphoto-1185228028-612x612.jpg" id="crosshands"></a>
+            <p id="motto">The Avengers Karate Class is dedicated to teaching the skills and discipline of karate to students of all ages.</p>
+        </section>
+        <br>
+        <br>
+        <section class="reachus" id="contact">
+            <h2 class="boxshadows">Contact Us</h2>
+=======
       <section id="home">
         <h2>Welcome to The Avengers Karate Class</h2>
         <p>
@@ -46,7 +97,7 @@
       </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
+
             <div class="contact-detail">
                 <img src="assets\Avengers Images\Gmail png.png" alt="Email Icon" class="contact-icon">
                 <p>Email: Eagle.FangMMA@Aol.com</p>
@@ -64,6 +115,53 @@
                 <p>Address: 308 Negra Arroyo Lane, Albuquerque, New Mexico, 87104</p>
             </div>
         </section>
+
+    </main>
+    <div id="root" class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    
+        
+        <section>
+            <h2>Schedule a class TODAY!</h2>
+            <ul>
+                <li><a href="#" id="signup-btn">Sign Up</a></li>
+            </ul>
+            <img src="assets/images/Class-Schedule.png" alt="Classes Schedule">
+        </section>
+    </main>
+    <div id="signup" style="display:none;">
+        <div>
+            <h2>Sign Up for The Avengers Karate Class</h2>
+            <form id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="class-type">Class Type:</label>
+                <select id="class-type" name="class-type" required>
+                    <option value="bjj">BJJ</option>
+                    <option value="muay-thai">Muay Thai</option>
+                    <option value="wrestling">Wrestling</option>
+                    <option value="kickboxing">Kickboxing</option>
+                </select><br><br>
+                <label for="class-schedule">Class Schedule:</label>
+                <select id="class-schedule" name="class-schedule" required>
+                    <!-- Options will be populated dynamically -->
+                </select><br><br>
+                <button type="submit">Submit</button>
+                <button type="button" id="close-modal">Close</button>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
+</body>
+</html>
+
 
     </main>
 
@@ -98,3 +196,4 @@
     </script>
   </body>
 </html>
+
