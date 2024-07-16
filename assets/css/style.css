@@ -19,6 +19,8 @@ header{
     background-repeat:no-repeat;
     background-position: 50% 50%;
     background-size:cover;
+    margin:0;
+    padding:0;
     object-fit: cover;
     width:100%;
     height: 100%;
@@ -112,7 +114,11 @@ section h2{
         padding-bottom: 10px; */
         /* justify-content: space-between; */
         align-items: center;
-        border:  10px groove white;
+        border-image: linear-gradient(to right, #3353d0 0%, #ff5151 100%) 1;
+        border-radius: 5px; /* this doesn't work */
+        border-width: px;
+        border-style: groove;
+        padding: 8px;
         background-image: linear-gradient(275deg, var(--secondarynippon)0%, var(--nipponcolors)100%);
         transition: all 0.4s ease-in;
         text-decoration: none;
@@ -135,6 +141,7 @@ section h2{
       .workinglink a:hover{
         background-image: linear-gradient(275deg, var(--wakandaforever)0%, var(--blackpanther)100%);
         color:white;
+        transition:all 0.4 ease-out;
         text-decoration: none;
       }
 
