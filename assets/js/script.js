@@ -5,24 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeModal = document.getElementById('close-modal');
     const classTypeSelect = document.getElementById('class-type');
     const classScheduleSelect = document.getElementById('class-schedule');
-    const Cronofy = require('cronofy');
-    
 
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    // Get the signup button element
-const signupBtn = document.getElementById('signup-btn');
-// Get the modal element
-const modal = document.getElementById('signup');
 
 // Add click event listener to the signup button
 signupBtn.addEventListener('click', function() {
     modal.style.display = 'block'; // Display the modal
 });
 
-// Get the form element
-const form = document.getElementById('signup-form');
 
 // Add submit event listener to the form
 form.addEventListener('submit', function(event) {
@@ -39,40 +28,7 @@ form.addEventListener('submit', function(event) {
     // Reset the form
     form.reset();
 });
-});
 
-    // Initialize Cronofy with your credentials
-    const cronofyClient = new Cronofy({
-        client_id: 'XT8CKYdAQKLd6ilwOZwKcc5R4vpCGULp',
-        client_secret: 'CRN_x66lk29yRcXtLSBOYy1T45K7ulGqseBZb7YAuZ',
-      });
-      
-      // Example function to fetch calendars
-      async function fetchCalendars() {
-        try {
-          const response = await cronofyClient.listCalendars();
-          console.log('Calendars:', response);
-          return response.calendars;
-        } catch (error) {
-          console.error('Error fetching calendars:', error);
-          throw error;
-        }
-      }
-      
-      // Example function to create an event
-      async function createEvent(eventData) {
-        try {
-          const response = await cronofyClient.createEvent(eventData);
-          console.log('Event created:', response);
-          return response;
-        } catch (error) {
-          console.error('Error creating event:', error);
-          throw error;
-        }
-      }
-      
-      // Example usage
-      fetchCalendars();
 
     const classSchedules = {
        'bjj': [
@@ -155,19 +111,16 @@ form.addEventListener('submit', function(event) {
         event.preventDefault();
     
         const formData = new FormData(form);
-        const classType = formData.get('class-type');
-        const schedule = formData.get('class-schedule').split(' ');
-        const selectedSchedule = classSchedules[classType].find(s => `${s.day} ${s.time}` === formData.get('class-schedule'));
-    
-        if (selectedSchedule) {
-            try {
-                await createEventFromSchedule(classType, selectedSchedule);
-                console.log('Event created successfully!');
-            } catch (error) {
-                console.error('Error creating event:', error);
-            }
-        } else {
-            console.error('Selected class schedule not found.');
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        try {
+            await createClassSchedule(data);
+            console.log('Class schedule created successfully!');
+        } catch (error) {
+            console.error('Error creating class schedule:', error);
         }
     
         // Store form data in localStorage for future use if needed
@@ -177,30 +130,22 @@ form.addEventListener('submit', function(event) {
         form.reset();
         modal.style.display = 'none';
     });
-})
 
-// Example function to create an event based on class schedule
-async function createEventFromSchedule(classType, schedule) {
-    const eventData = {
-        calendar_id: 'your_calendar_id', // Specify the calendar ID where the event will be created
-        event_id: 'class-type', // Unique identifier for the event
-        summary: `${classType} Class - ${schedule.day} ${schedule.time}`, // Event summary
-        start: new Date('2023-01-01T' + schedule.time.split('-')[0]), // Start time of the event
-        end: new Date('2023-01-01T' + schedule.time.split('-')[1]), // End time of the event
-        description: 'Description of the event', // Event description
-        location: '3828 Piermont Dr, Albuquerque, NM.', // Event location
-    };
-
-    try {
-        const response = await cronofyClient.createEvent(eventData);
-        console.log('Event created:', response);
-        return response;
-    } catch (error) {
-        console.error('Error creating event:', error);
-        throw error;
+    async function createClassSchedule(classData) {
+        const response = await fetch('http://localhost:3000/classes', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(classData)
+        });
+        if (!response.ok) {
+            throw new Error('Failed to create class schedule');
+        }
+        return response.json();
     }
-}
 
+});
 // Styling for page via jQuery
 const rootMan = $('#root');
 const infinity = $('<p>');
