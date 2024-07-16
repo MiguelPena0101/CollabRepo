@@ -16,3 +16,5 @@ console.log(infinity);
 motto.append(infinity);
 
 rootMan.append(motto);
+
+$("#title").css("fontSize", "60px");
