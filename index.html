@@ -4,48 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Avengers Karate Class</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <!-- please work -->
+    
+    
+    
 </head>
 <body>
+    
     <header>
-        <h1>The Avengers Karate Class</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#programs">Programs</a></li>
-                
-            </ul>
+        <h1 id="title">The Avengers Karate Class</h1>
+        <div class="welp"></div>
+        <nav class="workinglink">
+                <a class="links" href="#home">Home</a></li>
+                <a class="links" href="#about">About</a></li>
+                <a class="links" id="floatright" href="#contact">Contact</a></li>
+                <a class="links" href="#" id="floatright">Sign Up</a></li>
         </nav>
+        
     </header>
-    <main>
-        <section id="home">
-            <h2>Welcome to The Avengers Karate Class</h2>
-            <p>Join us to learn the art of karate and become a hero in your own right!</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>The Avengers Karate Class is dedicated to teaching the skills and discipline of karate to students of all ages.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: avengerskarate@example.com</p>
-            <p>Phone: 123-456-7890</p>
-        </section>
-        <section id="programs">
-            <h2>Programs</h2>
-            <p>These are our dedicated programs that we provide.</p>
+<br>
 
+
+    <main>
+        <section class="provide" id="home">
+            <h2 class="boxshadows">Welcome to The Avengers Karate Class</h2>
+            <section id="video-container" class="About">
+                <video autoplay muted loop>
+                  <source
+                    src="./assets/AvengersImages/Capfightscene.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+            
         </section>
+        <br>
+        <section >
+        <h2 class="boxshadows">Our Motto</h2>
+        <img src="./assets/AvengersImages/gettyimages-187288791-612x612.jpg" id="kicking"></a>
+        <p id="floatbodyleft">Join us to learn the art of karate and become a hero in your own right!</p>
+        </section>
+        <section class="provide" id="about">
+            <h2 class="boxshadows" id="thisisus">About Us</h2>
+            <img src="./assets/AvengersImages/istockphoto-1185228028-612x612.jpg" id="crosshands"></a>
+            <p id="motto">The Avengers Karate Class is dedicated to teaching the skills and discipline of karate to students of all ages.</p>
+        </section>
+        <br>
+        <br>
+        <section class="reachus" id="contact">
+            <h2 class="boxshadows">Contact Us</h2>
+            <div class="contact-detail">
+                <img src="assets\Avengers Images\Gmail png.png" alt="Email Icon" class="contact-icon">
+                <p>Email: Eagle.FangMMA@Aol.com</p>
+            </div>
+            <div class="contact-detail">
+                <img src="assets\Avengers Images\Phone.png" alt="Phone Icon" class="contact-icon">
+                <p>Phone: 123-556-7890</p>
+            </div>
+            <div class="contact-detail">
+                <img src="assets\Avengers Images\Instagram.jpg" alt="Instagram Icon" class="contact-icon">
+                <p>Instagram: @Eagle.FangMMA</p>
+            </div>
+            <div class="contact-detail">
+                <img src="assets\Avengers Images\Dojo png.png" alt="Address Icon" class="contact-icon">
+                <p>Address: 308 Negra Arroyo Lane, Albuquerque, New Mexico, 87104</p>
+            </div>
+        </section>
+    </main>
+    <div id="root" class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    
         
         <section>
             <h2>Schedule a class TODAY!</h2>
             <ul>
                 <li><a href="#" id="signup-btn">Sign Up</a></li>
             </ul>
-            <img src="assets/images/Class-Schedule.png" alt="Classes Schedule"
+            <img src="assets/images/Class-Schedule.png" alt="Classes Schedule">
         </section>
     </main>
     <div id="signup" style="display:none;">
@@ -74,8 +111,8 @@
             </form>
         </div>
     </div>
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/calendar.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
 </body>
 </html>
