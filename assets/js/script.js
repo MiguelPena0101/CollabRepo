@@ -6,26 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const classTypeSelect = document.getElementById('class-type');
     const classScheduleSelect = document.getElementById('class-schedule');
     const Cronofy = require('cronofy');
-    const rootMan = $('#root');
-const infinity = $('<p>');
-
-infinity.text = ('~Thanos')
-
-infinity.addClass('.footer')
-const motto = $('<h4>')
-
-motto.text('Strength of the Infinity Stones')
-motto.addClass('power');
-
-console.log(infinity);
-
-motto.append(infinity);
-
-rootMan.append(motto);
-
-// font for header
-
-$("#title").css("fontSize", "60px");
+    
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -220,3 +201,24 @@ async function createEventFromSchedule(classType, schedule) {
     }
 }
 
+// Styling for page via jQuery
+const rootMan = $('#root');
+const infinity = $('<p>');
+
+infinity.text = ('~Thanos')
+
+infinity.addClass('.footer')
+const motto = $('<h4>')
+
+motto.text('Strength of the Infinity Stones')
+motto.addClass('power');
+
+console.log(infinity);
+
+motto.append(infinity);
+
+rootMan.append(motto);
+
+// font for header
+
+$("#title").css("fontSize", "60px");

@@ -9,7 +9,8 @@
 
 }
 *{
-  box-sizing: border-box;
+   box-sizing: border-box;
+  
   /* margin-bottom:0; */
   
 }
@@ -202,10 +203,10 @@ section h2{
   border: 3px solid var(--nipponcolors)
 }
 
-#contact{
+/* #contact{
  bottom: 2px;
  text-align: center;
-}
+} */
 
 .provide{
   margin-bottom: 4px;
@@ -257,19 +258,15 @@ section h2{
 @tailwind components;
 @tailwind utilities; */
 /* please work */
-=======
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-=======
 
 #contact {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    bottom: 2px;
+    text-align: center;
 }
 
 #contact h2 {
@@ -293,23 +290,16 @@ section h2{
     margin: 0;
     font-size: 1.5em;
 }
-=======
-header{
-    
 
-}
 
-header {
-}
-
-body {
+/* body {
   background-image: url(../AvengersImages/istockphoto-495868375-612x612.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background: rgb(242,52,52);
     background: linear-gradient(90deg, rgba(242,52,52,1) 4%, rgba(171,48,41,1) 38%, rgba(179,94,45,1) 62%, rgba(153,77,30,1) 79%, rgba(115,61,27,1) 100%);
     font-size: 20px; */
-}
+/* } */
 
 /* h1 {
     color: purple;
@@ -320,10 +310,17 @@ body {
 @tailwind components;
 @tailwind utilities; */
 
+#schedule{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#center{
+  margin: 0 auto;
 
+}
 #video-container {
-  position: relative;
-  height: ;
+  position: relative; 
   /* width: %; */
   margin: 0;
   padding: 0;
