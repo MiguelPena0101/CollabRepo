@@ -208,6 +208,15 @@ section h2{
  text-align: center;
 } */
 
+#signup-form{
+  background-color: whitesmoke;
+  display:grid;
+  border: groove 5px var(--blackpanther);
+  padding: 15px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
 .provide{
   margin-bottom: 4px;
   
@@ -273,11 +282,20 @@ section h2{
     text-align: center;
     font-size: 3em;
 }
-
+#subscribe{
+  text-align: center;
+  padding: 25px;
+  display:flex;
+  justify-content: center;
+}
 .contact-detail {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    background-color: black;
+    border: solid 2px var(--blackpanther);
+    padding: 5px;
+    opacity: 0.9;
 }
 
 .contact-icon {
@@ -288,7 +306,8 @@ section h2{
 
 .contact-detail p {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    
 }
 
 

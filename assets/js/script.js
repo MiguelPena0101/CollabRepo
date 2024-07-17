@@ -146,6 +146,7 @@ form.addEventListener('submit', function(event) {
     }
 
 });
+
 // Styling for page via jQuery
 const rootMan = $('#root');
 const infinity = $('<p>');
