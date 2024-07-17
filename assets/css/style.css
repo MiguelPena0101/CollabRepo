@@ -1,4 +1,9 @@
-
+*{
+  box-sizing: border-box;
+ 
+ /* margin-bottom:0; */
+ 
+}
 :root{
     --primary: rgb(252, 100, 2);
     --secondary: rgb(78, 43, 19);
@@ -8,12 +13,7 @@
     --wakandaforever: rgb(12,11,19);
 
 }
-*{
-   box-sizing: border-box;
-  
-  /* margin-bottom:0; */
-  
-}
+
 
 header{
     /* background-color: #968565; */
