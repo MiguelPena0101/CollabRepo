@@ -1,0 +1,26 @@
+/* 
+.links {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 32px;
+    ;
+  } */
+
+  /* .links{
+    text-align: center;
+} */
+
+@media screen and (max-width: 768px) {
+    p{
+     font-size: 50%;
+    }
+   }
+ 
+ /* 
+ h2.boxshadows {
+   margin-bottom: 3px;
+   padding:auto;
+   float:left;
+ } */
+  /* please work */

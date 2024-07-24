@@ -10,3 +10,6 @@
 # Files that doesn't need to be uploaded
 ThanosSnappedYou.zip
 
+#directory to ignore
+oldstyle
+oldreset
