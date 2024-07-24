@@ -23,11 +23,6 @@ Hey, We have created an awesome martial arts gym website. It's super easy to use
 
 ------------------------------------------------------
 
-## Link to deployed application
-https://miguelpena0101.github.io/TheAvengers/
-
-------------------------------------------------------
-
 ## Project Contributors
     - Miguel Pena
     - James Eckman
