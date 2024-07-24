@@ -1,5 +1,5 @@
 # The Avengers' Karate
-![image](https://github.com/user-attachments/assets/bd5a6cbb-62b5-4906-a615-32de8819f4e7)
+![Welcome Banner](./assets/images/welcome.png)
 
 ## Description
 Hey, We have created an awesome martial arts gym website. It's super easy to use – you can learn all about our gym, get to know our amazing masters, and see all our classes on a handy calendar. Signing up for classes is a breeze, and you can even add them to your Google Calendar straight from the site. It's perfect for keeping your training schedule organized.
@@ -11,6 +11,9 @@ Hey, We have created an awesome martial arts gym website. It's super easy to use
 - A short mission statement and our Dojo's motto
 - A contact area that includes the ways we can be reached that includes our address and location on a google map.
 - Lastly, but certainly not least, an awesome styling designed with CSS that really attracts like minded future Avengers!
+![Schedule Class Today](./assets/images/scheduleclass.png)
+![Google Maps & Contact Us](./assets/images/contactus.png)
+![Dojo Leaders](./assets/images/leads.png)
 
 
 ------------------------------------------------------
