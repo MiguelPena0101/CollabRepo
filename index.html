@@ -21,7 +21,7 @@
                 <a class="links" href="#home">Home</a></li>
                 <a class="links" href="#about">About</a></li>
                 <a class="links" id="floatright" href="#contact">Contact</a></li>
-                <a class="links" href="#" id="floatright">Sign Up</a></li>
+                <span id="signup-btn"></span><a class="links" href="#signup" id="floatright">Sign Up</a></li></span>
         </nav>
     </header>
 <br>
@@ -42,6 +42,7 @@
             type="video/mp4"
           />
         </video>
+
       </section> -->
         
 
@@ -89,6 +90,7 @@
 </div>
 </section>
 
+
         <br>
         <section >
         <h2 class="boxshadows">Our Motto</h2>
@@ -133,10 +135,10 @@
             <img id="schedule" src="assets/images/Class-Schedule.png" alt="Classes Schedule" >
         </section>
     </main>
-    <div id="signup" style="display:none;">
+    <div class="boxshadows2" id="signup" style="display:block;">
         <div>
             <h2>Sign Up for The Avengers Karate Class</h2>
-            <form id="signup-form">
+            <form id="signup-form" >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="email">Email:</label>
@@ -184,7 +186,7 @@
         let gapiInited = false;
         let gisInited = false;
         document.getElementById('authorize_button').style.visibility = 'hidden';
-        document.getElementById('signout_button').style.visibility = 'hidden';
+        document.getElementById('close-modal').style.visibility = 'hidden';
         /**
          * Callback after api.js is loaded.
          */
@@ -290,12 +292,12 @@
           document.getElementById('content').innerText = output;
         }
       </script>
-9:25
 <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
       <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 
-    <script type="text/javascript" src="/assets/js/script.js"></script>
-    <script src="/assets/js/server.js"></script>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
 </body>
 </html>
 </body>
